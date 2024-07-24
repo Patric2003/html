@@ -2,14 +2,63 @@
 /*outras medias*/
 
 @media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
     body{
         background-image: url(../imagens/back-print.jpg);
     }
+    main{
+
+        border: 3px solid black;
+    }
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+    #phone{
+        display: none;
+    }
+    
+    #tablet{
+     display: none;
+    }
+    
+    #impressora{
+     display: block;
+    }
+    
+    #pc{
+     display: none;
+    }
+    
+    #TV{
+     display: none;    
+    }
 }
 
-@media screen and (min-width: 760px) and (max-width:92px){
+@media screen and (min-width: 768px) and (max-width:992px){
     body{
         background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone{
+        display: none;
+    }
+    
+    #tablet{
+     display: block;
+    }
+    
+    #impressora{
+     display: none;
+    }
+    
+    #pc{
+     display: none;
+    }
+    
+    #TV{
+     display: none;    
     }
 }
 
@@ -17,10 +66,48 @@
     body{
         background-image: url(../imagens/back-pc.jpg);
     }
+    #phone{
+        display: none;
+    }
+    
+    #tablet{
+     display: none;
+    }
+    
+    #impressora{
+     display: none;
+    }
+    
+    #pc{
+     display: block;
+    }
+    
+    #TV{
+     display: none;    
+    }
 }
 
 @media screen and (min-width:1200px){
     body{
         background-image: url(../imagens/back-tv.jpg);
+    }
+    #phone{
+        display: none;
+    }
+    
+    #tablet{
+     display: none;
+    }
+    
+    #impressora{
+     display: none;
+    }
+    
+    #pc{
+     display: none;
+    }
+    
+    #TV{
+     display: block;    
     }
 }
